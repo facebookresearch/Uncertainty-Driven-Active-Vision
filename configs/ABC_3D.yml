@@ -1,0 +1,34 @@
+# Copyright (c) Facebook, Inc. and its affiliates.
+# This source code is licensed under the CC-BY-NC license found in the
+# LICENSE file in the root directory of this source tree.
+
+experiment:
+  experiment_id: test # experiment name
+  id: test # name of the instance in the experiment
+  logdir: logs # log directory
+  randomseed: 42  # seed
+  patience: 50 # number of epochs to train for without improvement on the validation set
+  batch_size: 16 # batch size
+  num_epochs: 1000 # number fo epoch to train for
+
+model:
+  image_embedding: 64 # output image embedding size from the CNN
+  hidden_size: 300 # hidden layer size for basically every non CNN layer
+  decoder_layers: 3 # number of hidden layers
+  CNN_ker_size: 5 # size of image kernels
+  num_CNN_blocks: 4 # number of times to half image dimensions in CNN
+  layers_per_block: 3 # number of layers for each dimensions size in CNN
+  initial_size: 16 # initial size of CNN channel in CNN
+
+optimizer:
+  lr: 0.0005
+
+loss:
+  num_samples: 1500 # number of points to samples for IoU computation while training
+  bce_loss: 0.1 # weight for BCE loss while training
+  iou_loss: 0.01 # weight for IoI loss while training
+
+NBV:
+  budget: 5 # how many image we want to use
+
+

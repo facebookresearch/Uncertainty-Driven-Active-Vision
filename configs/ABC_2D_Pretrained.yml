@@ -1,0 +1,31 @@
+# Copyright (c) Facebook, Inc. and its affiliates.
+# This source code is licensed under the CC-BY-NC license found in the
+# LICENSE file in the root directory of this source tree.
+
+experiment:
+  batch_size: 16
+  experiment_id: pretrained
+  id: pretrained
+  logdir: logs
+  num_epochs: 1000
+  patience: 50
+  randomseed: 0
+
+loss:
+  num_rays: 32
+
+model:
+  CNN_ker_size: 3
+  decoder_layers: 3
+  hidden_size: 250
+  image_embedding: 50
+  initial_size: 40
+  layers_per_block: 6
+  num_CNN_blocks: 4
+  num_layers: 5
+
+optimizer:
+  lr: 0.0001
+
+NBV:
+  budget: 5

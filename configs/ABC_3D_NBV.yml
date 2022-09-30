@@ -1,0 +1,36 @@
+# Copyright (c) Facebook, Inc. and its affiliates.
+# This source code is licensed under the CC-BY-NC license found in the
+# LICENSE file in the root directory of this source tree.
+
+NBV:
+  exp_name: test # experiment name
+  inst_name: test # name of instance in experiment
+  policy: candidate # the policy being evaluated, chosen from : random , even, odd, gradient, candidate
+  budget: 5 # how many input images to consider
+  location_dist: .7 # how far apart view must be at minimum
+
+uncert:
+  uncert_lam : 1 # the minimum value for depth uncertainty weight
+  pow_uncert: 6 # exponential for uncertainty of depth
+  pow_acc: 4 # exponenetial for uncertainty accumulation function
+  dir_dir: [.5, .5, .5, .5] # directional derivatve settings
+  sil_pow: 2 # exponential to silhouette uncertainty
+
+candidate:
+  num_candidates: 20 # number of candidates considered
+  resolution: 32 # resolution of uncertainty image computed
+
+grad:
+  steps: 5 # number of steps
+  lr: 0.5 # learning rate
+  dist_reg:  0.01 # weight for distance regularizer
+  norm_reg: 4. # weight for search space regularizer
+  resolution: 16 # resolution of uncertainty image used
+
+base:
+  config: ../configs/ABC_3D_Pretrained.yml # config of 3D recon model to load
+
+eval:
+  num_initialization: 2 # number of evaluations per object
+  chunk_size: 5000 # number of points processed at a time
+  num_points_iou: 100000 # number of points samples for iou evaluation

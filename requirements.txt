@@ -1,0 +1,14 @@
+torch
+torchvision
+matplotlib
+numpy
+pyrender
+scipy
+submitit
+tensorboard
+trimesh
+tqdm
+pyyaml
+scikit-image
+einops
+
