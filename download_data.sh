@@ -4,5 +4,5 @@
 #LICENSE file in the root directory of this source tree.
 
 wget https://dl.fbaipublicfiles.com/ABC/ActiveVisionDataset.tar
-tar xf ActiveVisionDataset.tar -C  --strip-components=1
+tar xf ActiveVisionDataset.tar 
 rm -rf ActiveVisionDataset.tar
