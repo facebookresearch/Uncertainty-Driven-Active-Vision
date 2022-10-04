@@ -5,7 +5,7 @@ This source code is licensed under the license found in the
 LICENSE file in the root directory of this source tree.
 -->
 ## Uncertainty-Driven Active Vision 
-Companion code for [Uncertainty-Driven Active Vision for Implicit Scene Reconstruction].
+Companion code for [Uncertainty-Driven Active Vision for Implicit Scene Reconstruction](https://arxiv.org/abs/2210.00978).
 
 This repository contains the code base for a Next Best View (NBV) task along with our proposed uncertainty driven 
 solution and a set of baselines for comparison.  The repo provides a dataset, pretrained models, and training and evaluation scripts.
@@ -24,6 +24,14 @@ Our approach to NBV works as shown in the image above: (1) a pre-trained shape r
 If you find this code useful in your research, please consider citing with the following BibTeX entry:
 
 ```
+@misc{smith2022uncertaintydriven,
+      title={Uncertainty-Driven Active Vision for Implicit Scene Reconstruction}, 
+      author={Edward J. Smith and Michal Drozdzal and Derek Nowrouzezahrai and David Meger and Adriana Romero-Soriano},
+      year={2022},
+      eprint={2210.00978},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 
 ```
 
