@@ -106,7 +106,7 @@ In all instances you can append the parameters $ --limit_data $ to use significa
 and evaluation.
 
 
-### NBV startegies
+### NBV Strategies
 We provide scripts for comparing our proposed 'candidate' and 'gradient' policies to baseline 'random', 'even', and 'odd'
 policies. 
 #### 3D Supervision 
